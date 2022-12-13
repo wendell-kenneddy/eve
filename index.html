@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="author" content="Wendell Kenneddy" />
+    <meta name="description" content="Paint with Eve." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Eve" />
+    <meta property="og:site_name" content="Eve" />
+    <meta property="og:description" content="Paint with Eve." />
+    <!-- <meta property="og:url" content="" /> -->
+    <meta property="og:locale" content="en-US" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Eve" />
+    <meta property="twitter:description" content="Paint with Eve." />
+    <!-- <meta property="twitter:url" content="" /> -->
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#FFC9C9" />
+    <title>Eve</title>
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+
+  <body>
+    <header>
+      <img src="/logo.png" alt="Logo" width="70" height="48" />
+    </header>
+
+    <main>
+      <div id="stage">
+        <canvas width="150" height="375" id="drawing-area"></canvas>
+      </div>
+
+      <div class="controls">
+        <div class="input-group">
+          <button id="clear-canvas">Clear</button>
+          <button id="save">Save</button>
+          <input type="color" name="brush-color" id="brush-color" />
+        </div>
+
+        <div class="control-group">
+          <label for="brush-type">Brush</label>
+          <select name="brush-type" id="brush-type">
+            <option value="1">Paint</option>
+            <option value="0">Erase</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label for="brush-width">Thickness</label>
+          <select name="brush-width" id="brush-width">
+            <option value="1">Small</option>
+            <option value="3">Normal</option>
+            <option value="5">Large</option>
+            <option value="10">XL</option>
+            <option value="15">XXL</option>
+          </select>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
